@@ -1,0 +1,83 @@
+* {
+  padding: 1px;
+  font-family: "Lucida Console", "Courier New", monospace;
+  box-sizing: border-box;
+}
+
+body {
+  overflow: hidden;
+  background: #080808;
+  color: rgb(85, 255, 181);
+}
+
+#header {
+  width: 100%;
+  height: 100vh;
+  font-family: "Lucida Console", "Courier New", monospace;
+  font-size: larger;
+  background-size: cover;
+  background-position: center;
+}
+
+.menu-top {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 0%;
+}
+
+nav.side-menu {
+  align-self: center;
+}
+
+ul.menu-items li {
+  display: inline-flex;
+  color: rgb(85, 255, 181);
+  padding: 8px;
+  margin: 0%;
+  width: fit-content;
+  border-right-style: solid;
+  border-color: rgb(85, 255, 181);
+  background: transparent;
+  transform: skew(-20deg);
+  flex-direction: initial;
+}
+.menu-items li a {
+  margin: 0%;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 5px;
+}
+.menu-items {
+  margin: 0%;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+hr {
+  height: 1%;
+  background-color: rgb(85, 255, 181);
+  border: none;
+  margin: 3px;
+}
+
+.menu-bottom {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 5px;
+}
+
+.container {
+  height: calc(100vh - 60px);
+  overflow: auto;
+  background-color: aliceblue;
+  padding: 50px;
+  color: black;
+}
+
+.menu {
+  height: fit-content;
+  width: 100%;
+}
