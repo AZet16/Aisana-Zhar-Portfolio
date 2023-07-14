@@ -24,48 +24,49 @@ body {
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  height: 40px;
+  padding: 0%;
   margin: 0%;
 }
-
-nav.side-menu {
-  align-self: center;
+.menu-items {
+  margin: 0%;
 }
 
 ul.menu-items li {
   display: inline-flex;
   padding: 8px;
   margin: 0%;
-  height: 30px;
   width: fit-content;
-  border-right-style: solid;
-  border-color: rgb(85, 255, 181);
+  border-style: solid;
+  border-right-color: rgb(85, 255, 181);
+  border-left-color: transparent;
+  border-bottom-color: transparent;
+  border-top-color: transparent;
   background: transparent;
   transform: skew(-20deg);
   flex-direction: initial;
 }
+
 ul.menu-items li a {
   text-decoration: none;
   color: rgb(85, 255, 181);
 }
-ul.menu-items li a:hover {
-  color: darkgoldenrod;
-  text-decoration: underline;
+
+ul.menu-items li:hover:not(.active) {
+  border-color: rgb(255, 230, 0);
+  color: rgb(255, 230, 0);
+}
+ul.menu-items li:hover:not(.active) a {
+  color: rgb(255, 230, 0);
 }
 
-ul.menu-items li:hover {
-  border-color: white;
-  background-color: cornsilk;
+ul.menu-items li:active {
+  border-color: rgb(85, 255, 181);
+  background-color: rgb(85, 255, 181);
+  color: black;
 }
-.menu-items li {
-  margin: 0%;
-  display: flex;
-  justify-content: flex-end;
-  padding-right: 5px;
-}
-.menu-items {
-  margin: 0%;
-  margin-bottom: 5px;
-  margin-top: 5px;
+ul.menu-items li:active a {
+  color: white;
 }
 
 hr {
