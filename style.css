@@ -52,21 +52,21 @@ ul.menu-items li a {
   color: rgb(85, 255, 181);
 }
 
-ul.menu-items li:hover:not(.active) {
+ul.menu-items li:hover:not(li.active) {
   border-color: rgb(255, 230, 0);
   color: rgb(255, 230, 0);
 }
-ul.menu-items li:hover:not(.active) a {
+ul.menu-items li:hover:not(li.active) {
   color: rgb(255, 230, 0);
 }
 
-ul.menu-items li:active {
+ul.menu-items li.active {
   border-color: rgb(85, 255, 181);
   background-color: rgb(85, 255, 181);
   color: black;
 }
-ul.menu-items li:active a {
-  color: white;
+ul.menu-items li.active > a {
+  color: black;
 }
 
 hr {
@@ -92,6 +92,6 @@ hr {
 }
 
 .menu {
-  height: 120px;
+  height: fit-content;
   width: 100%;
 }
