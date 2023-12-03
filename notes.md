@@ -11,3 +11,11 @@ https://dev.to/codingdudecom/everything-about-stroke-text-in-css-561i
 
 icons:
 https://www.flaticon.com/free-icons/web-development
+
+hover effect: https://www.shecodes.io/athena/26736-how-to-make-a-button-hover-using-css#:~:text=You%20can%20add%20a%20hover,CSS%20%3Ahover%20pseudo%2Dclass.&text=This%20CSS%20code%20will%20cause,hovers%20their%20mouse%20over%20it.
+
+
+email system:
+https://www.youtube.com/watch?v=sGQSz22U8VM option 1 : smpt js doesn't have free plan now
+
+

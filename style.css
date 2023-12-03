@@ -102,8 +102,12 @@ hr {
   padding: 50px;
   color: rgb(85, 255, 181);
   border-color: rgb(85, 255, 181);
-
+  align-items: center;
   flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
 }
 
 .menu {
@@ -149,16 +153,18 @@ ul.langlist a img {
   height: 30px;
 }
 
+.linkto{
+  background: linear-gradient(0deg,  rgb(85, 255, 181)  -10%, black 90%);
+
+}
+
 footer div.linkto {
-  display: inline-flex;
   justify-content: space-evenly;
-  align-items: center;
-  background:linear-gradient(0deg,  black -15%, rgb(85, 255, 181) 85%);
+  align-items: flex-end;
   color: black;
   display: flex;
-  padding: 20px;
   height: 150px;
-  background-clip: content-box;
+  padding-bottom: 20px;
 }
 
 .biggericon {
@@ -177,4 +183,109 @@ ul.biggericon a {
 ul.biggericon a img {
   width: 40px;
   height: 50px;
+}
+
+.contact_form{
+  width: 900px;
+    height: fit-content;
+    /* background: rgb(178, 255, 222) 30%; */
+    background: black;
+    border: 3px solid rgb(85, 255, 181);
+    display: flex;
+    flex-direction: row;
+    padding: 5px 10px;
+    align-items: center;
+    /* justify-content: center; */
+    max-width: 900px;
+    /* margin-top: 60px; */
+    /* display: flex; */
+    /*margin-top: 60px;*/
+
+}
+
+
+.contact_form form{
+    width: 60%; 
+    height: min-content;
+    /* background: rgb(178, 255, 222) 30%; */
+    background: black;
+    display: flex;
+    flex-direction: column;
+    margin: 5px 10px;
+    align-items: center;
+    /* justify-content: center; */
+    /* max-width: 600px; */
+    border-right: 3px solid rgb(85, 255, 181);
+}
+
+.contact_form .contact_links{
+    width: 40%; 
+    height: max-content;
+    /* background: rgb(178, 255, 222) 30%; */
+    background: black;
+    /* border: 3px solid rgb(85, 255, 181); */
+    display: flex;
+    flex-direction: column;
+    padding: 5px 10px;
+    align-items: center;
+    /* justify-content: center; */
+    /* max-width: 600px;*/
+}
+
+form div{
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+form h2{
+  color: rgb(85, 255, 181);
+
+}
+
+form input, textarea{
+  border: 0;
+  margin: 10px;
+  width: 400px;
+  padding: 20px;
+  outline: rgb(85, 255, 181);
+  background: black;
+  box-sizing: border-box;
+  border: 1px solid rgb(85, 255, 181);
+  border-radius: 5px;
+  color: rgb(85, 255, 181);
+  font-size: 16px;
+
+}
+
+form ::placeholder{
+  color: rgb(85, 255, 181);
+
+}
+
+form button{
+  padding: 15px;
+  background: black;
+  color:  rgb(85, 255, 181);
+  font-size: 16px;
+  border: 1px solid rgb(85, 255, 181);
+  outline: none;
+  cursor: pointer;
+  width: 150px;
+  margin: 20px auto 0;
+  border-radius: 10px;
+}
+
+form button:hover{ 
+  padding: 15px;
+  color: black;
+  background:  rgb(85, 255, 181);
+  font-size: 16px;
+  outline: none;
+  cursor: pointer;
+  width: 150px;
+  margin: 20px auto 0;
+  border-radius: 10px;
 }
