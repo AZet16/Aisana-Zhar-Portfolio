@@ -100,7 +100,7 @@ hr {
       /* height: calc(100vh - 40px); */
       overflow: auto;
       background: linear-gradient(0deg, rgb(85, 255, 181) -40%, black 60%);
-      padding: 10vw; 
+      padding: 0px 2vw 4vw 2vw;
       color: rgb(85, 255, 181);
       border-color: rgb(85, 255, 181);
       align-items: center;
@@ -120,6 +120,8 @@ div#mobile.inside_container {
     display: none;
 }
 
+
+/*page view for desktop view: currently used for about page (index)*/
 @media screen and (min-width: 800px) {
   div#desktop.inside_container {
     display: flex;
@@ -133,6 +135,7 @@ div#mobile.inside_container {
 }
 }
 
+/*page view for mobile view: currently used for about page (index)*/
 @media screen and (max-width: 800px) {
   div#mobile.inside_container {
     display: flex;
@@ -143,6 +146,15 @@ div#mobile.inside_container {
     flex-direction: column;
     align-items: center;
     width: 100%;
+}
+div#mobile.inside_container .contact_img{
+  margin: 0;
+  padding: 0;
+}
+div#mobile.inside_container .contact_img img{
+  width: 55vw;
+  margin: 0;
+  padding: 0;
 }
 }
 
@@ -241,6 +253,8 @@ ul.biggericon a img {
   display: none;
 }
 
+
+/* form for desktop size*/
 @media screen and (min-width: 800px) {
   .mobile_form h2{
     font-size: 13vw;
@@ -324,6 +338,7 @@ ul.biggericon a img {
 }
 
 
+/*contact form for mobile view*/
 @media screen and (max-width: 800px) {
   .mobile_form h2{
     font-size: 5vw;
@@ -395,7 +410,7 @@ ul.biggericon a img {
 }
 
 .mobile_form .contact_form form button:hover{ 
-  padding: 3cqb;
+  padding: 1vw;
   color: black;
   background:  rgb(85, 255, 181);
   font-size: 5vw;
