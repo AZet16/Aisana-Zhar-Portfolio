@@ -100,7 +100,7 @@ hr {
       /* height: calc(100vh - 40px); */
       overflow: auto;
       background: linear-gradient(0deg, rgb(85, 255, 181) -40%, black 60%);
-      /* padding: 5vw; */
+      padding: 10vw; 
       color: rgb(85, 255, 181);
       border-color: rgb(85, 255, 181);
       align-items: center;
@@ -242,6 +242,9 @@ ul.biggericon a img {
 }
 
 @media screen and (min-width: 800px) {
+  .mobile_form h2{
+    font-size: 13vw;
+  }
   .desktop_form .contact_form{
     width: 100vw;
       height: fit-content;
@@ -254,7 +257,7 @@ ul.biggericon a img {
       align-items: center;
       /* justify-content: center; */
       max-width: 900px;
-      margin-bottom: 10vw;
+      /*margin-bottom: 10vw;*/
       /* margin-top: 60px; */
       /* display: flex; */
       /*margin-top: 60px;*/
@@ -278,10 +281,53 @@ ul.biggericon a img {
 .contact_form .contact_links{
   width: 40%; 
 }
+
+.desktop_form .contact_form form input, textarea{
+  border: 0;
+    margin: 1vw;
+    width: 30vw;
+    padding: 1vw;
+    outline: rgb(85, 255, 181);
+    background: black;
+    box-sizing: border-box;
+    border: 1px solid rgb(85, 255, 181);
+    border-radius: 5px;
+    color: rgb(85, 255, 181);
+    font-size: 1vw;
+
+}
+
+.desktop_form .contact_form form button{
+  padding: 1vw;
+    background: black;
+    color: rgb(85, 255, 181);
+    font-size: 2vw;
+    border: 1px solid rgb(85, 255, 181);
+    outline: none;
+    cursor: pointer;
+    width: 15vw;
+    margin: 3vw auto 0;
+    border-radius: 10px;
+}
+
+.desktop_form .contact_form form button:hover{ 
+  padding: 1vw;
+  color: black;
+  background:  rgb(85, 255, 181);
+  font-size: 2vw;
+  outline: none;
+  cursor: pointer;
+  width: 15vw;
+  margin: 3vw auto 0;
+  border-radius: 10px;
+}
 }
 
 
 @media screen and (max-width: 800px) {
+  .mobile_form h2{
+    font-size: 5vw;
+  }
   .mobile_form .contact_form{
     width: 60vw;
       height: fit-content;
@@ -294,6 +340,7 @@ ul.biggericon a img {
       align-items: center;
       /* justify-content: center; */
       max-width: 900px;
+      /*margin-bottom: 10vw;*/
       /* margin-top: 60px; */
       /* display: flex; */
       /*margin-top: 60px;*/
@@ -316,6 +363,47 @@ ul.biggericon a img {
 
 .contact_form .contact_links{
   width: 100%; 
+}
+
+
+.mobile_form .contact_form form input, textarea{
+  border: 0;
+    margin: 1vw;
+    width: 70vw;
+    padding: 2vw;
+    outline: rgb(85, 255, 181);
+    background: black;
+    box-sizing: border-box;
+    border: 1px solid rgb(85, 255, 181);
+    border-radius: 5px;
+    color: rgb(85, 255, 181);
+    font-size: 3vw;
+
+}
+
+.mobile_form .contact_form form button{
+  padding: 1vw;
+    background: black;
+    color: rgb(85, 255, 181);
+    font-size: 5vw;
+    border: 1px solid rgb(85, 255, 181);
+    outline: none;
+    cursor: pointer;
+    width: 15vw;
+    margin: 1vw auto 0;
+    border-radius: 10px;
+}
+
+.mobile_form .contact_form form button:hover{ 
+  padding: 3cqb;
+  color: black;
+  background:  rgb(85, 255, 181);
+  font-size: 5vw;
+  outline: none;
+  cursor: pointer;
+  width: 15vw;
+  margin: 1vw auto 0;
+  border-radius: 10px;
 }
 }
 
@@ -350,65 +438,15 @@ form h2{
 
 }
 
-.desktop_form .contact_form form input, textarea{
-  border: 0;
-    margin: 1vw;
-    width: 30vw;
-    padding: 1vw;
-    outline: rgb(85, 255, 181);
-    background: black;
-    box-sizing: border-box;
-    border: 1px solid rgb(85, 255, 181);
-    border-radius: 5px;
-    color: rgb(85, 255, 181);
-    font-size: 2vw;
 
-}
 
-.mobile_form .contact_form form input, textarea{
-  border: 0;
-    margin: 1vw;
-    width: 70vw;
-    padding: 2vw;
-    outline: rgb(85, 255, 181);
-    background: black;
-    box-sizing: border-box;
-    border: 1px solid rgb(85, 255, 181);
-    border-radius: 5px;
-    color: rgb(85, 255, 181);
-    font-size: 3vw;
-
-}
 
 form ::placeholder{
   color: rgb(85, 255, 181);
 
 }
 
-form button{
-  padding: 1vw;
-    background: black;
-    color: rgb(85, 255, 181);
-    font-size: 2vw;
-    border: 1px solid rgb(85, 255, 181);
-    outline: none;
-    cursor: pointer;
-    width: 30vw;
-    margin: 5vw auto 0;
-    border-radius: 10px;
-}
 
-form button:hover{ 
-  padding: 15px;
-  color: black;
-  background:  rgb(85, 255, 181);
-  font-size: 16px;
-  outline: none;
-  cursor: pointer;
-  width: 150px;
-  margin: 20px auto 0;
-  border-radius: 10px;
-}
 
 
 
