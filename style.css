@@ -99,7 +99,7 @@ hr {
   height: calc(100vh - 30px);
   overflow: auto;
   background: linear-gradient(0deg,  rgb(85, 255, 181)  -40%, black 60%);
-  padding: 50px;
+  padding: 30px;
   color: rgb(85, 255, 181);
   border-color: rgb(85, 255, 181);
   align-items: center;
@@ -109,6 +109,22 @@ hr {
   flex-wrap: wrap;
 
 }
+
+.inside_container{
+
+  display: flex;
+  padding-left: 60px;
+  padding-right: 30px;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+}
+
+.inside_container div{
+  margin: 20px;
+}
+
 
 .menu {
   height: fit-content;
@@ -290,3 +306,24 @@ form button:hover{
   border-radius: 10px;
 }
 
+.button{
+  color: rgb(85, 255, 181);
+  background:#080808;
+  border: 1px solid rgb(85, 255, 181);
+  padding: 20px;
+  text-decoration: none;
+
+}
+
+.button:hover{
+  color: #080808;
+  background:rgb(85, 255, 181);
+  padding: 20px;
+  text-decoration: none;
+}
+
+.photo{
+  width: 300px;
+  margin: 5px;
+  border-radius: 10px;
+}
