@@ -20,3 +20,6 @@ https://www.youtube.com/watch?v=sGQSz22U8VM option 1 : smpt js doesn't have free
 
 https://www.youtube.com/watch?v=Yg6POD0M30w option 2: has sources available
 used alongside: https://formsubmit.co/ 
+
+
+https://www.freecodecamp.org/news/how-to-use-html-to-open-link-in-new-tab/ about opening links
