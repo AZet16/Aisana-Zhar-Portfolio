@@ -9,7 +9,8 @@ body {
   display: flex;
     flex-direction: column;
     /* min-height: 100vh; */
-    background: #080808;
+    background: linear-gradient(0deg, rgb(85, 255, 181) -40%, black 60%);
+
     color: rgb(85, 255, 181);
     margin: 0; 
     /* padding: 0; */
@@ -104,7 +105,6 @@ hr {
 .container {
       /* height: calc(100vh - 40px); */
       overflow: auto;
-      background: linear-gradient(0deg, rgb(85, 255, 181) -40%, black 60%);
       padding: 0px 2vw 4vw 2vw;
       color: rgb(85, 255, 181);
       border-color: rgb(85, 255, 181);
@@ -498,14 +498,16 @@ form ::placeholder{
 .item-block{
   margin: 20px;
   padding: 20px;
-    border: 2px solid white;
-    width: 400px;
+    border: 1px solid rgb(85, 255, 181);
+    width: min-content;
+    min-width: 345px;
     height: fit-content;
     min-height: 500px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    border-radius: 10px;
 }
 
 .item-block p{
@@ -580,24 +582,97 @@ form ::placeholder{
   }
 }
 
-.item{
-    display: block;
-    position: relative;
+.list{
+  margin-top: 12px;
+  width: fit-content;
+}
+
+.item, .star-item{
+  display: inline-flex;
+    /* position: relative; */
     margin-top: 5px;
     margin-bottom: 5px;
     cursor: pointer;
     width: 100%;
     padding-left: 20px;
-    padding-right: 20px;
+    /* padding-right: 20px; */
+    align-content: stretch;
+    align-items: center;
+    /* flex-direction: row; */
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+}
 
-    
+.item-block div{
+  margin-top: 20px;
 }
 
 
-.list{
-  margin-top: 12px;
+.list .item label, .list .star-item label{
   width: 100%;
+  margin-left: 20px;
 }
+
+.list .item input[type=checkbox], .list .star-item input[type=checkbox]{
+  appearance: none;
+  background-color: transparent;
+  margin: 0;
+  font: inherit;
+  color: currentColor;
+  
+  width: 40px;
+  height: 40px;
+  border: 0.15em solid currentColor;
+  border-radius: 0.15em;
+  transform: translateY(-0.075em);
+
+  display: grid;
+  place-content: center;
+}
+
+
+/* prepares border and bacground color*/
+.list .item input[type=checkbox]:checked, .list .star-item input[type=checkbox]:checked{
+  background-color: rgb(85, 255, 181);
+  border: 0.15em solid rgb(85, 255, 181);
+
+}
+
+
+/* set up for when marked checked*/
+.list .item input[type=checkbox]::before, .list .star-item input[type=checkbox]::before{
+  content: "";
+  width: 40px;
+  height: 40px;
+  transform: scale(0);
+  box-shadow: inset 1em 1em var(--form-control-color);
+
+  color: rgb(85, 255, 181);
+  background-color: white;
+  
+}
+
+
+/*sets up draws pattern object infront on click*/
+.list .item input[type=checkbox]:checked::before, .list .star-item input[type=checkbox]:checked::before{
+
+  transform: scale(0.8);
+
+  clip-path: polygon(21% 35%, 46% 55%, 75% 13%, 91% 27%, 48% 84%, 10% 52%);
+
+}
+
+
+
+
+.list .star-item input[type=checkbox]:checked::before{
+
+  transform: scale(0.8);
+
+  clip-path: polygon(50% 0%, 69% 28%, 98% 35%, 75% 60%, 79% 91%, 51% 76%, 21% 91%, 25% 60%, 2% 35%, 33% 30%);
+
+}
+
 
 .page-title{
   align-self: center;
@@ -614,3 +689,4 @@ form ::placeholder{
   color: yellow;
   width: 10%;
 }
+

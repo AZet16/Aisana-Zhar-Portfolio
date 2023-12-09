@@ -23,3 +23,7 @@ used alongside: https://formsubmit.co/
 
 
 https://www.freecodecamp.org/news/how-to-use-html-to-open-link-in-new-tab/ about opening links
+
+
+https://moderncss.dev/pure-css-custom-checkbox-style/ customise checkbox
+https://bennettfeely.com/clippy/ use to draw a pattern
