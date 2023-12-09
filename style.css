@@ -10,17 +10,19 @@ body {
   min-height: 100vh;
   background: #080808;
   color:  rgb(85, 255, 181);
+  margin: 0;
+  padding: 0;
 }
 
 .web_name {
   padding-left: 1%;
     /* font-size: inherit; */
     font-family: "Monaco", monospace;
-    font-size: 4vw;
+    font-size: 5vw;
     background-size: cover;
     background-position: center;
     color: black;
-    text-shadow: 1px 0 0 rgb(85, 255, 181), 20px 20px 0 rgb(85, 255, 181), -1px 0 0 rgb(85, 255, 181), 0 -1px 0 rgb(85, 255, 181);
+    text-shadow: 1px 0 0 rgb(85, 255, 181), 8vw 3vw 0 rgb(85, 255, 181), -1px 0 0 rgb(85, 261, 181), 0 -1px 0 rgb(85, 255, 181);
 }
 
 .stroke_txt{
@@ -490,7 +492,7 @@ form ::placeholder{
 }
 
 
-.web-frame{
+.item-block{
   margin: 20px;
   padding: 20px;
     border: 2px solid white;
@@ -503,19 +505,19 @@ form ::placeholder{
     justify-content: center;
 }
 
-.web-frame p{
+.item-block p{
   font-size: 15px;
   margin: 5px;
   width: 100%;
   text-align: center;
 }
 
-.web-frame h2{
+.item-block h2{
   text-align: center;
   
 }
 
-.web-frame a{
+.item-block a{
   text-decoration: none;
   margin-top: 5px;
   padding: 3px;
@@ -526,7 +528,7 @@ form ::placeholder{
   
 }
 
-.web-frame a:hover{
+.item-block a:hover{
   text-decoration: none;
 
   padding: 3px;
@@ -538,7 +540,7 @@ form ::placeholder{
 }
 
 
-.web-frame a.simple-link{
+.item-block a.simple-link{
   text-decoration: underline;
   padding: 3px;
   color: rgb(85, 255, 181);
@@ -547,7 +549,7 @@ form ::placeholder{
   
 }
 
-.web-frame a.simple-link:hover{
+.item-block a.simple-link:hover{
   text-decoration: underline;
   padding: 3px;
   color: yellow;
@@ -559,7 +561,7 @@ form ::placeholder{
 
 /*for small screen*/
 @media screen and (max-width: 800px) {
-  .list-of-jobs{
+  .list-of-items{
     display: flex;
       flex-direction: column;
       align-items: center;
@@ -567,7 +569,7 @@ form ::placeholder{
 }
 
 @media screen and (min-width: 800px) {
-  .list-of-jobs {
+  .list-of-items {
     width:100%; 
     padding-bottom: 30px;
     display: contents;
@@ -575,7 +577,7 @@ form ::placeholder{
   }
 }
 
-.to-do-item{
+.item{
     display: block;
     position: relative;
     margin-top: 5px;
@@ -585,10 +587,15 @@ form ::placeholder{
     padding-left: 20px;
     padding-right: 20px;
     
+    
 }
 
 
-.checklist{
+.list{
   margin-top: 12px;
   width: 100%;
+}
+
+.page-title{
+  align-self: center;
 }
