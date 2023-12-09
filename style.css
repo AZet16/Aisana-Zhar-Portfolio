@@ -586,7 +586,7 @@ form ::placeholder{
     width: 100%;
     padding-left: 20px;
     padding-right: 20px;
-    
+
     
 }
 
@@ -598,4 +598,14 @@ form ::placeholder{
 
 .page-title{
   align-self: center;
+}
+
+.hidden-link{
+  margin: 2px;
+  color: transparent;
+}
+
+.hidden-link:hover{
+  margin: 2px;
+  color: yellow;
 }
