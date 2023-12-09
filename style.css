@@ -612,4 +612,5 @@ form ::placeholder{
 .hidden-link:hover{
   margin: 2px;
   color: yellow;
+  width: 10%;
 }
