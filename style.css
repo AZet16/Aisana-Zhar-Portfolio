@@ -529,7 +529,7 @@ form ::placeholder{
   border: 2px solid rgb(85, 255, 181);
   color: rgb(85, 255, 181);
   border-radius: 10px;
-  background-color: black;
+  background-color: transparent;
   
 }
 
@@ -682,6 +682,7 @@ form ::placeholder{
   margin: 2px;
   color: transparent;
   text-decoration: none;
+  width: 10%;
 }
 
 .hidden-link:hover{
