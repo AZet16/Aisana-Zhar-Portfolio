@@ -134,8 +134,8 @@ div#mobile.inside_container {
     padding-right: 5vw;
     justify-content: space-evenly;
     flex-wrap: nowrap;
-    flex-direction: row;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
     width: 100%;
 }
 }
@@ -144,23 +144,26 @@ div#mobile.inside_container {
 @media screen and (max-width: 800px) {
   div#mobile.inside_container {
     display: flex;
-    padding-left: 5vw;
-    padding-right: 5vw;
     justify-content: space-evenly;
     flex-wrap: nowrap;
+    align-items: flex-start;
+    width: 100%;
+  }
+  
+  div#mobile.inside_container div{
+    display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
-}
-div#mobile.inside_container .contact_img{
-  margin: 0;
-  padding: 0;
-}
-div#mobile.inside_container .contact_img img{
-  width: 55vw;
-  margin: 0;
-  padding: 0;
-}
+  }
+  div#mobile.inside_container .contact_img{
+    margin: 0;
+    padding: 0;
+  }
+  div#mobile.inside_container .contact_img img{
+    width: 55vw;
+    margin: 0;
+    padding: 0;
+  }
 }
 
 
@@ -180,7 +183,9 @@ footer {
   bottom: 0;
   height: fit-content;
   width: 100%;
+  padding: 15px;
   color: rgb(85, 255, 181);
+  background: linear-gradient(0deg,  rgb(85, 255, 181)  -10%, black 90%);
 }
 
 #wrap {
@@ -192,11 +197,13 @@ footer {
   align-items: center;
   width: 100%;
   height: 40px;
-  padding: 10px;
-  margin: 10px;
   justify-content: flex-start;
+  padding: 10px;
   border-bottom: solid;
   border-bottom-color: rgb(85, 255, 181);
+
+  margin-bottom: 5px;
+
 }
 
 .langlist {
@@ -214,7 +221,8 @@ ul.langlist a img {
 }
 
 .linkto{
-  background: linear-gradient(0deg,  rgb(85, 255, 181)  -10%, black 90%);
+  /*background: linear-gradient(0deg,  rgb(85, 255, 181)  -10%, black 90%);*/
+  background: rgba(255,255,255,0.6);
 
 }
 
@@ -223,8 +231,9 @@ footer div.linkto {
   align-items: flex-end;
   color: black;
   display: flex;
-  height: 150px;
-  padding-bottom: 20px;
+  height: fit-content;
+  padding: 20px;
+  margin: 10px;
 }
 
 .biggericon {
@@ -345,6 +354,9 @@ ul.biggericon a img {
 
 /*contact form for mobile view*/
 @media screen and (max-width: 800px) {
+  div.mobile_form{
+    padding-top: 30px;
+  }
   .mobile_form h2{
     font-size: 5vw;
   }
@@ -368,63 +380,63 @@ ul.biggericon a img {
   }
 
   .contact_form form{
-    width: 60%; 
-    height: min-content;
-    /* background: rgb(178, 255, 222) 30%; */
-    background: black;
-    display: flex;
-    flex-direction: column;
-    margin: 5px 10px;
-    align-items: center;
-    /* justify-content: center; */
-    /* max-width: 600px; */
-    border-right: 0px solid rgb(85, 255, 181);
-}
+      width: 60%; 
+      height: min-content;
+      /* background: rgb(178, 255, 222) 30%; */
+      background: black;
+      display: flex;
+      flex-direction: column;
+      margin: 5px 10px;
+      align-items: center;
+      /* justify-content: center; */
+      /* max-width: 600px; */
+      border-right: 0px solid rgb(85, 255, 181);
+  }
 
-.contact_form .contact_links{
-  width: 100%; 
-}
+  .contact_form .contact_links{
+    width: 100%; 
+  }
 
 
-.mobile_form .contact_form form input, textarea{
-  border: 0;
-    margin: 1vw;
-    width: 70vw;
-    padding: 2vw;
-    outline: rgb(85, 255, 181);
-    background: black;
-    box-sizing: border-box;
-    border: 1px solid rgb(85, 255, 181);
-    border-radius: 5px;
-    color: rgb(85, 255, 181);
-    font-size: 3vw;
+  .mobile_form .contact_form form input, textarea{
+    border: 0;
+      margin: 1vw;
+      width: 70vw;
+      padding: 2vw;
+      outline: rgb(85, 255, 181);
+      background: black;
+      box-sizing: border-box;
+      border: 1px solid rgb(85, 255, 181);
+      border-radius: 5px;
+      color: rgb(85, 255, 181);
+      font-size: 3vw;
 
-}
+  }
 
-.mobile_form .contact_form form button{
-  padding: 1vw;
-    background: black;
-    color: rgb(85, 255, 181);
+  .mobile_form .contact_form form button{
+    padding: 1vw;
+      background: black;
+      color: rgb(85, 255, 181);
+      font-size: 5vw;
+      border: 1px solid rgb(85, 255, 181);
+      outline: none;
+      cursor: pointer;
+      width: 15vw;
+      margin: 1vw auto 0;
+      border-radius: 10px;
+  }
+
+  .mobile_form .contact_form form button:hover{ 
+    padding: 1vw;
+    color: black;
+    background:  rgb(85, 255, 181);
     font-size: 5vw;
-    border: 1px solid rgb(85, 255, 181);
     outline: none;
     cursor: pointer;
     width: 15vw;
     margin: 1vw auto 0;
     border-radius: 10px;
-}
-
-.mobile_form .contact_form form button:hover{ 
-  padding: 1vw;
-  color: black;
-  background:  rgb(85, 255, 181);
-  font-size: 5vw;
-  outline: none;
-  cursor: pointer;
-  width: 15vw;
-  margin: 1vw auto 0;
-  border-radius: 10px;
-}
+  }
 }
 
 
@@ -471,12 +483,11 @@ form ::placeholder{
 
 
 .button{
-  color: rgb(85, 255, 181);
-    background: #080808;
+  color:  #080808;
+    background:rgb(85, 255, 181);
     border: 1px solid rgb(85, 255, 181);
     padding: 3vw;
     text-decoration: none;
-    font-size: 2vw;
 
 }
 
@@ -485,13 +496,14 @@ form ::placeholder{
   background:rgb(85, 255, 181);
   padding: 3vw;
   text-decoration: none;
-  font-size: 2vw;
 }
 
 .photo{
-  width: 30vw;
-    margin: 1vw;
-    border-radius: 2vw;
+  width: 20vw;
+  padding: 2vw;
+  margin: 1vw;    
+  border-radius: 2vw;
+    align-self: center;
 }
 
 
@@ -543,6 +555,31 @@ form ::placeholder{
   color: black;
   
 }
+
+/*link button*/
+
+.button a:hover{
+  text-decoration: none;
+  margin-top: 5px;
+  padding: 3px;
+  border: 2px solid rgb(85, 255, 181);
+  color: rgb(85, 255, 181);
+  border-radius: 10px;
+  background-color: transparent;
+  
+}
+
+.button a{
+  text-decoration: none;
+
+  padding: 3px;
+  border: 2px solid rgb(85, 255, 181);
+  background-color: rgb(85, 255, 181);
+  border-radius: 10px;
+  color: black;
+  
+}
+
 
 
 .item-block a.simple-link{

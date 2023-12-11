@@ -27,3 +27,5 @@ https://www.freecodecamp.org/news/how-to-use-html-to-open-link-in-new-tab/ about
 
 https://moderncss.dev/pure-css-custom-checkbox-style/ customise checkbox
 https://bennettfeely.com/clippy/ use to draw a pattern
+
+https://drive.google.com/file/d/1DR6-ZheZ5fewqmxxcj-6LTtVM953dLVr/view?usp=sharing - link to Nov2023 CV
