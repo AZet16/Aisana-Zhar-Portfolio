@@ -156,7 +156,7 @@ div#mobile.inside_container {
     align-items: center;
   }
   div#mobile.inside_container .contact_img{
-    margin: 0;
+    margin: 10px;
     padding: 0;
   }
   div#mobile.inside_container .contact_img img{
@@ -169,7 +169,7 @@ div#mobile.inside_container {
 
 
 .inside_container div{
-  margin: 20px;
+  margin-bottom: 10px;
 }
 
 
@@ -270,11 +270,14 @@ ul.biggericon a img {
 
 /* form for desktop size*/
 @media screen and (min-width: 800px) {
-  .mobile_form h2{
-    font-size: 13vw;
-  }
-  .desktop_form .contact_form{
-    width: 100vw;
+    div.desktop_form{
+      padding-top: 30px;
+    }
+    /*.desktop_form h2{
+      font-size: 13vw;
+    }*/
+    .desktop_form .contact_form{
+      width: 100vw;
       height: fit-content;
       /* background: rgb(178, 255, 222) 30%; */
       background: black;
@@ -290,65 +293,65 @@ ul.biggericon a img {
       /* display: flex; */
       /*margin-top: 60px;*/
   
-  }
+    }
 
-  .contact_form form{
-    width: 60%; 
-    height: min-content;
-    /* background: rgb(178, 255, 222) 30%; */
-    background: black;
-    display: flex;
-    flex-direction: column;
-    margin: 5px 10px;
-    align-items: center;
-    /* justify-content: center; */
-    /* max-width: 600px; */
-    border-right: 3px solid rgb(85, 255, 181);
-}
+    .desktop_form .contact_form form{
+      width: 60%; 
+      height: min-content;
+      /* background: rgb(178, 255, 222) 30%; */
+      background: black;
+      display: flex;
+      flex-direction: column;
+      margin: 5px 10px;
+      align-items: center;
+      /* justify-content: center; */
+      /* max-width: 600px; */
+      border-right: 3px solid rgb(85, 255, 181);
+    }
 
-.contact_form .contact_links{
-  width: 40%; 
-}
+    .desktop_form .contact_form .contact_links{
+      width: 40%; 
+    }
 
-.desktop_form .contact_form form input, textarea{
-  border: 0;
-    margin: 1vw;
-    width: 30vw;
-    padding: 1vw;
-    outline: rgb(85, 255, 181);
-    background: black;
-    box-sizing: border-box;
-    border: 1px solid rgb(85, 255, 181);
-    border-radius: 5px;
-    color: rgb(85, 255, 181);
-    font-size: 1vw;
+    .desktop_form .contact_form form input, textarea{
+      border: 0;
+        margin: 1vw;
+        width: 30vw;
+        padding: 1vw;
+        outline: rgb(85, 255, 181);
+        background: black;
+        box-sizing: border-box;
+        border: 1px solid rgb(85, 255, 181);
+        border-radius: 5px;
+        color: rgb(85, 255, 181);
+        font-size: 1vw;
 
-}
+    }
 
-.desktop_form .contact_form form button{
-  padding: 1vw;
-    background: black;
-    color: rgb(85, 255, 181);
-    font-size: 2vw;
-    border: 1px solid rgb(85, 255, 181);
-    outline: none;
-    cursor: pointer;
-    width: 15vw;
-    margin: 3vw auto 0;
-    border-radius: 10px;
-}
+    .desktop_form .contact_form form button{
+      padding: 1vw;
+        background: black;
+        color: rgb(85, 255, 181);
+        font-size: 2vw;
+        border: 1px solid rgb(85, 255, 181);
+        outline: none;
+        cursor: pointer;
+        width: 15vw;
+        margin: 3vw auto 0;
+        border-radius: 10px;
+    }
 
-.desktop_form .contact_form form button:hover{ 
-  padding: 1vw;
-  color: black;
-  background:  rgb(85, 255, 181);
-  font-size: 2vw;
-  outline: none;
-  cursor: pointer;
-  width: 15vw;
-  margin: 3vw auto 0;
-  border-radius: 10px;
-}
+    .desktop_form .contact_form form button:hover{ 
+      padding: 1vw;
+      color: black;
+      background:  rgb(85, 255, 181);
+      font-size: 2vw;
+      outline: none;
+      cursor: pointer;
+      width: 15vw;
+      margin: 3vw auto 0;
+      border-radius: 10px;
+    }
 }
 
 
@@ -413,20 +416,9 @@ ul.biggericon a img {
 
   }
 
-  .mobile_form .contact_form form button{
-    padding: 1vw;
-      background: black;
-      color: rgb(85, 255, 181);
-      font-size: 5vw;
-      border: 1px solid rgb(85, 255, 181);
-      outline: none;
-      cursor: pointer;
-      width: 15vw;
-      margin: 1vw auto 0;
-      border-radius: 10px;
-  }
+  
 
-  .mobile_form .contact_form form button:hover{ 
+  .mobile_form .contact_form form button{ 
     padding: 1vw;
     color: black;
     background:  rgb(85, 255, 181);
@@ -438,7 +430,7 @@ ul.biggericon a img {
     border-radius: 10px;
   }
 }
-
+/*end of mobile view for forms*/
 
 
 
@@ -482,18 +474,20 @@ form ::placeholder{
 
 
 
-.button{
+.button:hover, a#mobile.button{
   color:  #080808;
-    background:rgb(85, 255, 181);
-    border: 1px solid rgb(85, 255, 181);
-    padding: 3vw;
-    text-decoration: none;
+  background:rgb(85, 255, 181);
+
+  border: 1px solid transparent;
+  padding: 3vw;
+  text-decoration: none;
 
 }
 
-.button:hover{
-  color: #080808;
-  background:rgb(85, 255, 181);
+.button{
+  color: rgb(85, 255, 181);;
+  background:transparent;
+  border: 1px solid rgb(85, 255, 181);
   padding: 3vw;
   text-decoration: none;
 }
@@ -534,27 +528,7 @@ form ::placeholder{
   
 }
 
-.item-block a{
-  text-decoration: none;
-  margin-top: 5px;
-  padding: 3px;
-  border: 2px solid rgb(85, 255, 181);
-  color: rgb(85, 255, 181);
-  border-radius: 10px;
-  background-color: transparent;
-  
-}
 
-.item-block a:hover{
-  text-decoration: none;
-
-  padding: 3px;
-  border: 2px solid rgb(85, 255, 181);
-  background-color: rgb(85, 255, 181);
-  border-radius: 10px;
-  color: black;
-  
-}
 
 /*link button*/
 
@@ -601,21 +575,57 @@ form ::placeholder{
 }
 
 
-/*for small screen*/
+/*list of items for small screen*/
 @media screen and (max-width: 800px) {
   .list-of-items{
     display: flex;
       flex-direction: column;
       align-items: center;
   }
+
+  .item-block a{
+    text-decoration: none;
+    margin-top: 5px;
+    padding: 3px;
+    border: 2px solid rgb(85, 255, 181);
+    color:#080808;
+    border-radius: 10px;
+    background-color: rgb(85, 255, 181);
+    
+  }
+
+  
 }
 
+/* list of items for desktop view*/
 @media screen and (min-width: 800px) {
   .list-of-items {
     width:100%; 
     padding-bottom: 30px;
     display: contents;
 
+  }
+
+  .item-block a{
+    text-decoration: none;
+    margin-top: 5px;
+    padding: 3px;
+    border: 2px solid rgb(85, 255, 181);
+    color: rgb(85, 255, 181);
+    border-radius: 10px;
+    background-color: transparent;
+    
+  }
+  
+  .item-block a:hover{
+    text-decoration: none;
+  
+    padding: 3px;
+    border: 2px solid rgb(85, 255, 181);
+    background-color: rgb(85, 255, 181);
+    border-radius: 10px;
+    color: black;
+    
   }
 }
 
