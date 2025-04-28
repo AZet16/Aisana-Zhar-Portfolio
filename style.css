@@ -113,7 +113,8 @@ hr {
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
-      align-content: flex-end;
+      align-content: center;
+      min-height: 25em;
 
 }
 
@@ -738,3 +739,13 @@ form ::placeholder{
   width: 10%;
 }
 
+a {
+  color: yellow;
+  text-decoration: none;
+  
+}
+
+a:hover {
+  color: white;
+  text-decoration: underline;
+}
